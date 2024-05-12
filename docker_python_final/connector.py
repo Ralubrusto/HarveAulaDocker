@@ -19,7 +19,7 @@ def salva_resultado(nome_jogador, jogador, computador, resultado):
 
     # É necessário alterar essa query abaixo apenas se você mudou o nome da tabela
     query = f"""
-        INSERT INTO tb_jogodavelha_resultados 
+        INSERT INTO tb_pedrapapeltesoura_resultados 
             (nome, jogada_jogador, jogada_computador, resultado) 
         VALUES  
             ('{nome_jogador}', '{jogador}', '{computador}', '{resultado}');

@@ -12,9 +12,9 @@ Em seguida execute o comando abaixo para clonar o repositório:
 Note que agora deve existir uma pasta chamada `HarveAulaDocker` dentro da pasta onde você executou o comando.  
 Para prosseguir, abra o Visual Studio Code, selecione a opção "Open Folder" e selecione essa pasta `HarveAulaDocker` recém criada.
 
-### **Passo 2:** Desenvolva o código do jogo da velha convencional
+### **Passo 2:** Desenvolva o código do Pedra Papel Tesoura convencional
 
-Para aquecer, abra a pasta `python_jogodavelha` e, dentro dela, abra o arquivo `main.py`.  
+Para aquecer, abra a pasta `python_pedrapapeltesoura` e, dentro dela, abra o arquivo `main.py`.  
 Nele você já encontrará um esqueleto de como seu código deve funcionar, mas fique à vontade para alterá-lo como quiser.  
 Edite e execute esse arquivo quantas vezes julgar necessário até que seu código funcione corretamente, o que implica:
 
@@ -25,9 +25,9 @@ Edite e execute esse arquivo quantas vezes julgar necessário até que seu códi
 
 Uma vez que seu código esteja funcionando, passe para o próximo passo.
 
-### **Passo 3:** Faça seu código do jogo da velha rodar dentro de um container Docker!
+### **Passo 3:** Faça seu código do Pedra Papel Tesoura rodar dentro de um container Docker!
 
-Inicie essa etapa copiando o arquivo do passo anterior para a pasta `docker_jogodavelha`.  
+Inicie essa etapa copiando o arquivo do passo anterior para a pasta `docker_pedrapapeltesoura`.  
 Dentro dessa pasta há também um arquivo `Dockerfile` a ser preenchido para prepararmos nossa **imagem Docker**!  
 Se o seu código já funciona, agora é apenas questão de preencher a Dockerfile com os parâmetros necessários, que são:
 
@@ -41,7 +41,7 @@ Se o seu código já funciona, agora é apenas questão de preencher a Dockerfil
 E pronto! Sua Dockerfile já está preenchida, agora precisamos criar uma imagem a partir dela.   
 Para fazer isso, faça o seguinte:
 
-  - Pelo terminal entre dentro da pasta onde está a sua Dockerfile (deve se chamar `docker_jogodavelha`)
+  - Pelo terminal entre dentro da pasta onde está a sua Dockerfile (deve se chamar `docker_pedrapapeltesoura`)
     - Caso não esteja dentro dela, utilize o comando `cd NOME_DA_PASTA` no terminal
   - Em seguida execute o comando `docker build . -t NOME_QUE_VC_QUISER`
     - Caso tenha algum erro que indique uma mensagem como `docker daemon is not running`, tente abrir o Docker Desktop e depois executar o comando novamente no terminal
@@ -138,7 +138,7 @@ Então execute localmente o código `main.py` para verificar se a integração c
 Se o seu código executar sem erros, parabéns!! Ele está pronto para a fase final
 
 
-### **Passo FINAL:** Coloque seu código Python em um docker e execute uma vez o jogo da velha 100% em docker!
+### **Passo FINAL:** Coloque seu código Python em um docker e execute uma vez o Pedra Papel Tesoura 100% em docker!
 
 Como seu código está funcionando, vamos criar uma imagem com ele.  
 Você pode aproveitar a sua Dockerfile anterior, mas será necessário incluir alguns comandos a mais:
